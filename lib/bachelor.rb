@@ -25,5 +25,7 @@ def get_occupation(data, hometown)
 end
 
 def get_average_age_for_season(data, season)
-  data[season].reduce(0) {|total_ages, woman| total_ages + woman["age"].to_f}
+  women = data[season]
+  total_ages = women.reduce(0) {|total_ages, woman| total_ages + woman["age"].to_f}
+  total_ages / women.count
 end
