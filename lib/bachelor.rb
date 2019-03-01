@@ -5,6 +5,7 @@ end
 
 def get_contestant_name(data, occupation)
   women = data.flat_map(season, women)
+  women.find {|woman| woman["occupation"].eql? occupation}
 end
 
 def count_contestants_by_hometown(data, hometown)
