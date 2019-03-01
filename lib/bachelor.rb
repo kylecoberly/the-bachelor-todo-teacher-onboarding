@@ -27,5 +27,5 @@ end
 def get_average_age_for_season(data, season)
   women = data[season]
   total_ages = women.reduce(0) {|total_ages, woman| total_ages + woman["age"].to_f}
-  (total_ages / women.count).floor
+  (total_ages / women.count).round
 end
