@@ -4,7 +4,7 @@ def get_first_name_of_season_winner(data, season)
 end
 
 def get_contestant_name(data, occupation)
-  # code here
+  women = data.flat_map(season, women)
 end
 
 def count_contestants_by_hometown(data, hometown)
