@@ -8,7 +8,6 @@ def women
 end
 
 def get_contestant_name(data, occupation)
-
   women.find {|woman| woman["occupation"].eql? occupation}
 end
 
