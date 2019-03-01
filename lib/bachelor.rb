@@ -3,8 +3,12 @@ def get_first_name_of_season_winner(data, season)
   winner["name"].split(" ").first
 end
 
+def women
+  data.flat_map(season, women)
+end
+
 def get_contestant_name(data, occupation)
-  women = data.flat_map(season, women)
+
   women.find {|woman| woman["occupation"].eql? occupation}
 end
 
