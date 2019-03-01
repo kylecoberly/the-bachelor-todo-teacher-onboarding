@@ -1,5 +1,6 @@
 def get_first_name_of_season_winner(data, season)
   winner = data[season].find {|contestant| contestant[:status].eql? "Winner"}
+  p winner
   winner[:name].split(" ").first
 end
 
