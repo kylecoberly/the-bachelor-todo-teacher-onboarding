@@ -14,7 +14,6 @@ end
 
 def count_contestants_by_hometown(data, hometown)
   get_women(data).reduce(0) {|hometown_count, woman|
-    p hometown_count, woman["hometown"], hometown
     hometown_count += 1 if woman["hometown"].eql? hometown
     hometown_count
   }
