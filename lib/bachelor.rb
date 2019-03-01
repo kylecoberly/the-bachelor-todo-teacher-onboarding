@@ -4,7 +4,7 @@ def get_first_name_of_season_winner(data, season)
 end
 
 def women
-  data.flat_map(season, women)
+  data.flat_map {|season, women| women}
 end
 
 def get_contestant_name(data, occupation)
