@@ -20,7 +20,9 @@ def count_contestants_by_hometown(data, hometown)
 end
 
 def get_occupation(data, hometown)
-  get_women(data).find {|woman| woman["hometown"].eql? hometown}["occupation"]
+  get_women(data)
+    .find {|woman| woman["hometown"].eql? hometown}
+    ["occupation"]
 end
 
 def get_average_age_for_season(data, season)
